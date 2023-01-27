@@ -37,7 +37,7 @@ body {
 input,
 textarea,
 select {
-  border: 1.5px solid var(--blue);
+  border: 1.5px solid var(--gray);
   border-radius: 10px;
   background-color: var(--light-gray);
   padding: 10px;
@@ -47,7 +47,7 @@ input:focus,
 textarea:focus,
 select:focus {
   outline: none;
-  border: 1.5px dashed var(--blue);
+  border: 1.5px dashed var(--gray);
 }
 
 button {
@@ -72,13 +72,13 @@ button:hover {
 }
 
 .title {
-  color: var(--blue);
+  color: var(--gray);
   font-size: 36px;
   font-weight: 700;
 }
 
 .subtitle {
-  color: var(--blue);
+  color: var(--light-gray);
   font-size: 24px;
   font-weight: 700;
 }
@@ -136,8 +136,8 @@ button:hover {
 }
 
 .button-primary {
-  background: var(--blue);
-  color: var(--light-gray);
+  background: var(--gray);
+  color: var(--dark-gray);
 }
 
 .button-secondary {
@@ -158,7 +158,7 @@ button:hover {
 }
 
 .button-search {
-  border: 2px solid var(--blue);
+  border: 2px solid var(--gray);
   background-color: var(--light-gray);
   padding: 2px;
 }
@@ -217,6 +217,6 @@ button:hover {
   align-items: flex-end;
 }
 
-h3{text-align:right;
+h3{text-align:center;
     display: flex;
     color: black;}
