@@ -39,6 +39,38 @@
       </form>
     </section>
     <!-- FIM FORMULÁRIO DE CADASTRO  -->
+
+<br />
+<br />
+<br />
+    <!-- INÍCIO FORMULÁRIO DE OPERAÇÕES -->
+
+    <section class="operations">
+        <form id="consulta1" class="consulta">
+            <h2>Formulário de Operações</h2>
+            <br />
+            <div class="row">
+                <div class="column">
+                    <input required id="conta" class="input" type="number" placeholder="Digite o número da conta"/>
+                        <select required class="select" id="operation">
+                            <option disabled>Selecione a operação</option>
+                            <option value="0">Saque</option>
+                            <option value="1">Deposito</option>
+                            <option value="2">Consulta Saldo</option>
+                        </select>
+                    <input required id="valor" class="input" type="number" placeholder="Digite o valor" />
+                    <input required id="senha" class="password" type="password" placeholder="Digite a senha" />
+                </div>
+            </div>
+            <br />
+            <br />
+            <div class="form-actions">
+                <button class="button-secondary" type="reset">Limpar</button>
+                <button class="button-primary" type="submit">Enviar</button>
+            </div>
+        </form>
+    </section>
+    <!-- FIM FORMULÁRIO DE OPERAÇÕES -->
   </body>
 </main>
   <!-- INÍCIO FOOTER  - MELHORAR -->

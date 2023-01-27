@@ -7,12 +7,13 @@ formCadastro.addEventListener('submit', (event) => {
   event.preventDefault();
 
   const validacao = {
-    conta: new Date().getTime(),
     nome: event.target.nome.value,
     cpf: event.target.cpf.value,
     celular: event.target.celular.value,
     senha1: event.target.senha1.value,
     senha2: event.target.senha2.value,
+    conta: new Date().getTime(),
+    saldo: 0,
   };
 
   //   validação de senha - só adiciona os itens de validação em clientes caso senha esteja ok.
