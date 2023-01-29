@@ -12,53 +12,155 @@
   <body>
     <!-- INICIO CABEÇALHO -->
     <header class="header">
-      <img src="./img/banklogo.png" alt="Logo Lloyds" height="100px" />
+      <img src="./img/banklogo.png" alt="Logo Banco" height="100px"/>
       <h3>Since 1903</h3>
     </header>
     <!-- FIM CABEÇALHO  -->
+
     <!-- ------------------------------------------------- -->
     <!-- INICIO FORMULÁRIO DE CADASTRO -->
     <main class="main">
-    <section>
-      <form id="form-Cadastro" class="form">
+      <form id="form-cadastro" class="form">
         <h2 class="subtitle">Formulário de Cadastro</h2>
+        <div class="column">
+          <!-- ORGANIZAÇÃO DO FORMULÁRIO POR DIVS -->
+          <div>
+            <label for="nome">Nome:</label>
+            <input required id="nome" type="text" placeholder="Digite o nome" />
+          </div>
 
-        <div class="row">
-          <div class="column">
+          <div>
+            <label for="cpf">CPF:</label>
+            <input required id="cpf" type="text" placeholder="Digite o CPF" />
+          </div>
+
+          <div>
+            <label for="celular">Celular:</label>
+            <input required id="celular" type="text" placeholder="Digite o celular"/>
+          </div>
+
+          <div>
+            <label for="senha">Senha:</label>
+            <input required id="senha" type="password" placeholder="Digite a senha"/>
+          </div>
+
+          <div>
+            <label for="confirmacaoSenha">Confirmação de Senha:</label>
+            <input required id="confirmacaoSenha" type="password" placeholder="Digite a confirmacao de senha"/>
+          </div>
+
+          <div>
+            <button type="reset">Limpar</button>
+            <button type="submit">Enviar</button>
+          </div>
+          </form>
+<!-- FIM FORMULÁRIO CADASTRO.  -->
+<br/>
+<br/>
+<br/>
+<!--
+  INÍCIO FORMULÁRIO OPERAÇÃO
+ -->
+
+
+  <h2 class="subtitle">Formulário de Operação</h2>
+    <form id="form-operacao">
+      <div class="column">
+      <div>
+        <label for="conta"> Conta:</label>
+        <input required id="conta" type="number" placeholder="Digite a conta" />
+      </div>
+
+      <div>
+        <label for="operacao">Operacao:</label>
+        <select required id="operacao">
+          <option value="saque">Saque</option>
+          <option value="deposito">Deposito</option>
+          <option value="saldo">Saldo</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="valor"> Valor:</label>
+        <input required id="valor" type="number" placeholder="Digite o valor"/>
+      </div>
+
+      <div>
+        <label for="senhaOperacao">Senha:</label>
+        <input required id="senhaOperacao" type="password" placeholder = "Digite a senha"/>
+      </div>
+
+      <div>
+        <button type="reset"> Limpar</button>
+        <button type="submit"> Enviar</button>
+      </div>
+    </div>
+    </form>
+  </main>
+
+   <footer class="header">
+      <img src="./img/banklogo.png" alt="Logo Lloyds" height="30px" />
+      <h4>Bank's webpage by Gerson</h4>
+   </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <!-- <div class="column">
+            <p>Nome</p>
             <input required id="nome" class="input" type="text" placeholder="Digite o nome" />
+            <p>CPF</p>
             <input required id="cpf" class="input" type="number" placeholder="Digite o cpf" />
+            <p>Celular</p>
             <input required id="celular" class="input" type="number" placeholder="Digite o celular" />
+            <p>Senha</p>
             <input required id="senha1" class="input" type="password" placeholder="Digite a senha" />
+            <p>Confirmação de Senha</p>
             <input required id="senha2" class="input" type="password" placeholder="Repita a senha" />
           </div>
         </div>
+
         <div class="form-actions">
           <button class="button-secondary" type="reset">Limpar</button>
           <button class="button-primary" type="submit">Enviar</button>
         </div>
       </form>
     </section>
-    <!-- FIM FORMULÁRIO DE CADASTRO  -->
+    FIM FORMULÁRIO DE CADASTRO  -->
 
+<!-- <br />
 <br />
-<br />
-<br />
+<br /> -->
     <!-- INÍCIO FORMULÁRIO DE OPERAÇÕES -->
 
-    <section class="operations">
+    <!-- <section class="operations">
         <form id="consulta1" class="consulta">
             <h2>Formulário de Operações</h2>
             <br />
             <div class="row">
                 <div class="column">
+                  <p>Conta</p>
                     <input required id="conta" class="input" type="number" placeholder="Digite o número da conta"/>
+                        <p>Tipo de operação</p>
                         <select required class="select" id="operation">
                             <option disabled>Selecione a operação</option>
                             <option value="0">Saque</option>
                             <option value="1">Deposito</option>
                             <option value="2">Consulta Saldo</option>
                         </select>
+                    <p>Valor</p>
                     <input required id="valor" class="input" type="number" placeholder="Digite o valor" />
+                    <p>Senha</p>
                     <input required id="senha" class="password" type="password" placeholder="Digite a senha" />
                 </div>
             </div>
@@ -70,13 +172,13 @@
             </div>
         </form>
     </section>
-    <!-- FIM FORMULÁRIO DE OPERAÇÕES -->
-  </body>
-</main>
-  <!-- INÍCIO FOOTER  - MELHORAR -->
-  <footer>
-    <img src="./img/banklogo.png" alt="Logo Lloyds" height="40px" />
-    <h3>Since 1903</h3>
+    FIM FORMULÁRIO DE OPERAÇÕES -->
+  <!-- </body>
+</main> -->
+  <!-- INÍCIO FOOTER  - MELHORAR
+  <footer class="header">
+    <img src="./img/banklogo.png" alt="Logo Lloyds" height="30px" />
+    <h4>Bank's webpage by Gerson</h4>
   </footer>
-  <!-- FIM FOOTER - MELHORAR -->
-</html>
+  FIM FOOTER - MELHORAR
+</html> -->
